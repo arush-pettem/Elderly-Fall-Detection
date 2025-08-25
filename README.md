@@ -9,5 +9,5 @@ This project is designed to detect falls particularly in case of elderly one's w
 
 4.if the output of the combination model is above certain threshold send and emergency alert alarm to care taker
 
-Our project main ain is to make a convineint and and effective fall detection system that can enabled to use with the home cctv photage
+Our project main aim is to make a convineint and and effective fall detection system that can enabled to use with the home cctv photage
 
