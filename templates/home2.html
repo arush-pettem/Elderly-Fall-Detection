@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home2.css') }}">
+    <script>
+        function redirectToModels() {
+            window.location.href = "{{ url_for('models') }}";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Fall Detection - Your Safety is Our Priority</h1>
+        <p>Welcome to Fall Detection – the leading website that provides advanced technology to detect falls. Our state-of-the-art image input technology accurately detects whether a person in the image is falling or not. With our cutting-edge fall detection technology and emergency calling service, we save lives and ensure peace of mind for our valued users.</p>
+        <button onclick="redirectToModels()">Get Started</button>
+    </header>
+    <main>
+        <h2>Services we provide</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Image Input</h3>
+                <p>Submit your images to our website and get accurate fall detection analysis through our advanced AI-powered algorithms.</p>
+            </div>
+            <div class="service">
+                <h3>Fall Detection</h3>
+                <p>Our advanced AI-powered algorithms detect falls with high accuracy, providing immediate alerts to ensure timely intervention.</p>
+            </div>
+            <div class="service">
+                <h3>Emergency Calling</h3>
+                <p>Our emergency calling feature provides immediate access to emergency services, ensuring timely intervention during falls or other emergencies.</p>
+            </div>
+            <div class="service">
+                <h3>Video Upload</h3>
+                <p>Upload video footage of falls to our website and receive detailed analysis and reports on fall detection and prevention.</p>
+            </div>
+        </div>
+        <div class="senior-safety">
+            <div class="content">
+                <h2>Fall Detection: Enhancing Safety for Seniors</h2>
+                <p>Discover how our fall detection system and emergency calling feature helped seniors live independently with peace of mind, ensuring timely assistance and improving their quality of life.</p>
+                <ul>
+                    <li>Fall detection system</li>
+                    <li>Emergency calling feature</li>
+                </ul>
+            </div>
+            <img decoding="async" src="./Home6_files/danny-g-htYDlrrKfuM-unsplash_ybQKHpE7.webp" class="attachment-full size-full wp-image-403572" alt="" style="filter: invert(0);">
+        </div>
+    </main>
+
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+</body>
+</html>
