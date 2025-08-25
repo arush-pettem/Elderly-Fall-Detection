@@ -1,0 +1,121 @@
+.elementor-kit-403601{--e-global-color-accent:#156F5B;--e-global-color-secondary:#FFFFFF;--e-global-color-primary:#212121;--e-global-color-text:#4D4D4D;--e-global-color-c742624:#FFFFFF;--e-global-color-e0b99f2:#FFFFFF;--e-global-color-45d598c:#FFFFFF;--e-global-color-40b28bc:#000000;--e-global-color-95d2432:#F3F8F7;--e-global-color-0bbe810:#F3F4F6;--e-global-color-9ce2928:#222222;--e-global-color-fab3c72:#F3BF6C;--e-global-typography-primary-font-family:"Futura";--e-global-typography-primary-font-size:50px;--e-global-typography-primary-font-weight:500;--e-global-typography-primary-line-height:1.1em;--e-global-typography-secondary-font-family:"Futura";--e-global-typography-secondary-font-size:40px;--e-global-typography-secondary-font-weight:600;--e-global-typography-secondary-line-height:1.1em;--e-global-typography-text-font-family:"Futura";--e-global-typography-text-font-size:15px;--e-global-typography-text-font-weight:300;--e-global-typography-text-line-height:1.5em;--e-global-typography-accent-font-family:"Futura";--e-global-typography-accent-font-size:14px;--e-global-typography-accent-font-weight:400;--e-global-typography-0e838b8-font-family:"Futura";--e-global-typography-0e838b8-font-size:28px;--e-global-typography-0e838b8-font-weight:500;--e-global-typography-0e838b8-line-height:1.4em;--e-global-typography-48643ca-font-family:"Futura";--e-global-typography-48643ca-font-size:20px;--e-global-typography-48643ca-font-weight:600;--e-global-typography-48643ca-line-height:1.1em;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-kit-403601{--e-global-typography-primary-font-size:30px;--e-global-typography-primary-line-height:1em;--e-global-typography-secondary-font-size:26px;--e-global-typography-secondary-line-height:1.1em;--e-global-typography-text-font-size:16px;--e-global-typography-text-line-height:1.4em;--e-global-typography-0e838b8-font-size:22px;--e-global-typography-0e838b8-line-height:1em;--e-global-typography-48643ca-font-size:20px;--e-global-typography-48643ca-line-height:1em;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_font.woff) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_font.woff2) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_font.ttf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_font.eot) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_font.otf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_italic_font.woff) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_italic_font.woff2) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_italic_font.ttf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_italic_font.eot) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: normal;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/futura_medium_italic_font.otf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_font.woff) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_font.woff2) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_font.ttf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_font.eot) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: normal;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_font.otf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_Italic_font.woff) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_Italic_font.woff2) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_Italic_font.ttf) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_Italic_font.eot) format('truetype');
+                                    }@font-face {
+                                      font-family: 'Futura';
+                                      font-style: italic;
+                                      font-weight: bold;
+                                      font-display: auto;
+                                      src: url(https://10web-site.ai/97/wp-content/plugins/tenweb-builder/assets/fonts/Futura_Bold_Italic_font.otf) format('truetype');
+                                    }/* End Custom Fonts CSS */

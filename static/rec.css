@@ -1,0 +1,83 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/560/735/774/nature-water-beach-cyan-wallpaper-a98954c7d2627d98dfa2a1a3e0e6a0db.jpg'); /* Add the path to your background image */
+  background-size: cover;
+  
+  
+
+  
+}
+
+/* Style the form container */
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* 20% transparent white background */
+  border-radius: 10px;
+ 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header */
+h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.284); /* 3D shadow effect */
+  transition: text-shadow 0.3s ease; /* Transition for hovering effect */
+}
+
+/* Hover effect for the header */
+h2:hover {
+  text-shadow: 4px 4px 6px rgba(0, 0, 255, 0.298)
+}
+
+/* Style the label for checkboxes */
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style the checkboxes */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style the submit buttons */
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 15px;
+  background-color: #3498db; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for buttons */
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Add margin between buttons */
+button + button {
+  margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+}
+
