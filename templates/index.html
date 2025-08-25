@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fall Detection</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    #video-feed {
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #predict-btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #predict-btn:hover {
+      background-color: #45a049;
+    }
+
+    #prediction-result {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #4caf50;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Fall Detection</h1>
+  <img id="video-feed" src="{{ url_for('video_feed') }}" crossorigin="anonymous" width="640" height="480">
+  <button id="predict-btn">Predict</button>
+  <div id="prediction-result"></div>
+  <script>
+    const predictBtn = document.getElementById('predict-btn');
+    const predictionResult = document.getElementById('prediction-result');
+    predictBtn.addEventListener('click', () => {
+      fetch('/predict', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        predictionResult.textContent = data.result;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</body>
+</html>

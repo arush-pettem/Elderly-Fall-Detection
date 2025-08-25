@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fall Detection Models</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .toggle-container button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-container button:hover {
+            background-color: #34495e;
+        }
+
+        .form-container {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #34495e;
+        }
+    </style>
+    <script>
+        function toggleForm(formId) {
+            const formContainers = document.querySelectorAll('.form-container');
+            formContainers.forEach(container => {
+                container.classList.remove('active');
+            });
+            const targetForm = document.getElementById(formId);
+            targetForm.classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fall Detection Models</h1>
+        <div class="toggle-container">
+            <button onclick="toggleForm('video-prediction-form')">Video Prediction</button>
+            <button onclick="toggleForm('sensor-prediction-form')">Sensor Prediction</button>
+        </div>
+        <div class="form-container active" id="video-prediction-form">
+            <form method="post" action="{{ url_for('predict_video') }}">
+                <div class="form-group">
+                    <label for="video_url">Video URL:</label>
+                    <input type="text" id="video_url" name="video_url" required>
+                </div>
+                <div class="form-group">
+                    <label for="caretaker_number">Caretaker's Number:</label>
+                    <input type="text" id="caretaker_number" name="caretaker_number" required>
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+        <div class="form-container" id="sensor-prediction-form">
+            <form method="post" action="{{ url_for('predict_sensor') }}">
+                <div class="form-group">
+                    <label for="sensor1">Sensor Reading 1:</label>
+                    <input type="number" id="sensor1" name="sensor1" required>
+                </div>
+                <div class="form-group">
+                    <label for="sensor2">Sensor Reading 2:</label>
+                    <input type="number" id="sensor2" name="sensor2" required>
+                </div>
+                <div class="form-group">
+                    <label for="sensor3">Sensor Reading 3:</label>
+                    <input type="number" id="sensor3" name="sensor3" required>
+                </div>
+                <div class="form-group">
+                    <label for="sensor4">Sensor Reading 4:</label>
+                    <input type="number" id="sensor4" name="sensor4" required>
+                </div>
+                <div class="form-group">
+                    <label for="sensor5">Sensor Reading 5:</label>
+                    <input type="number" id="sensor5" name="sensor5" required>
+                </div>
+                <div class="form-group">
+                    <label for="sensor6">Sensor Reading 6:</label>
+                    <input type="number" id="sensor6" name="sensor6" required>
+                </div>
+                <div class="form-group">
+                    <label for="sensor7">Sensor Reading 7:</label>
+                    <input type="number" id="sensor7" name="sensor7" required>
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
